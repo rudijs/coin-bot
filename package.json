@@ -1,0 +1,24 @@
+{
+  "name": "coin-bot",
+  "version": "1.0.0",
+  "description": "get coin list",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.14",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dayjs": "^1.8.29",
+    "technicalindicators": "^3.1.0"
+  }
+}

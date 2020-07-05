@@ -5,6 +5,7 @@ export const data = {
     symbol: "ETH",
     coinGecko: "https://www.coingecko.com/en/coins/ethereum#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/ethereum/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x0000000000000000000000000000000000000000",
   },
   "0xdac17f958d2ee523a2206206994597c13d831ec7": {
     name: "Tether USD",
@@ -12,6 +13,7 @@ export const data = {
     symbol: "USDT",
     coinGecko: "https://www.coingecko.com/en/coins/tether usd#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/tether usd/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xdac17f958d2ee523a2206206994597c13d831ec7",
   },
   "0xb8c77482e45f1f44de1745f52c74426c631bdd52": {
     name: "BNB",
@@ -19,6 +21,7 @@ export const data = {
     symbol: "BNB",
     coinGecko: "https://www.coingecko.com/en/coins/bnb#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/bnb/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xb8c77482e45f1f44de1745f52c74426c631bdd52",
   },
   "0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b": {
     name: "CRO",
@@ -26,6 +29,7 @@ export const data = {
     symbol: "CRO",
     coinGecko: "https://www.coingecko.com/en/coins/cro#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/cro/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b",
   },
   "0x514910771af9ca656af840dff83e8264ecf986ca": {
     name: "ChainLink Token",
@@ -33,6 +37,7 @@ export const data = {
     symbol: "LINK",
     coinGecko: "https://www.coingecko.com/en/coins/chainlink token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/chainlink token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x514910771af9ca656af840dff83e8264ecf986ca",
   },
   "0x63d958d765f5bd88efdbd8afd32445393b24907f": {
     name: "Acash Coin",
@@ -40,6 +45,7 @@ export const data = {
     symbol: "ACA",
     coinGecko: "https://www.coingecko.com/en/coins/acash coin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/acash coin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x63d958d765f5bd88efdbd8afd32445393b24907f",
   },
   "0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3": {
     name: "Bitfinex LEO Token",
@@ -47,6 +53,7 @@ export const data = {
     symbol: "LEO",
     coinGecko: "https://www.coingecko.com/en/coins/bitfinex leo token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/bitfinex leo token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x2af5d2ad76741191d15dfe7bf6ac92d4bd912ca3",
   },
   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
     name: "USD//C",
@@ -54,6 +61,7 @@ export const data = {
     symbol: "USDC",
     coinGecko: "https://www.coingecko.com/en/coins/usd//c#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/usd//c/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
   },
   "0x6f259637dcd74c767781e37bc6133cd6a68aa161": {
     name: "HuobiToken",
@@ -61,6 +69,7 @@ export const data = {
     symbol: "HT",
     coinGecko: "https://www.coingecko.com/en/coins/huobitoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/huobitoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x6f259637dcd74c767781e37bc6133cd6a68aa161",
   },
   "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39": {
     name: "HEX",
@@ -68,6 +77,7 @@ export const data = {
     symbol: "HEX",
     coinGecko: "https://www.coingecko.com/en/coins/hex#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/hex/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x2b591e99afe9f32eaa6214f7b7629768c40eeb39",
   },
   "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2": {
     name: "Maker",
@@ -75,6 +85,7 @@ export const data = {
     symbol: "MKR",
     coinGecko: "https://www.coingecko.com/en/coins/maker#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/maker/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
   },
   "0xc00e94cb662c3520282e6f5717214004a7f26888": {
     name: "Compound",
@@ -82,6 +93,7 @@ export const data = {
     symbol: "COMP",
     coinGecko: "https://www.coingecko.com/en/coins/compound#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/compound/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xc00e94cb662c3520282e6f5717214004a7f26888",
   },
   "0xf1290473e210b2108a85237fbcd7b6eb42cc654f": {
     name: "HEDG",
@@ -89,6 +101,7 @@ export const data = {
     symbol: "HEDG",
     coinGecko: "https://www.coingecko.com/en/coins/hedg#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/hedg/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xf1290473e210b2108a85237fbcd7b6eb42cc654f",
   },
   "0x37f04d2c3ae075fad5483bb918491f656b12bdb6": {
     name: "Vestchain",
@@ -96,6 +109,7 @@ export const data = {
     symbol: "VEST",
     coinGecko: "https://www.coingecko.com/en/coins/vestchain#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/vestchain/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x37f04d2c3ae075fad5483bb918491f656b12bdb6",
   },
   "0xc9859fccc876e6b4b3c749c5d29ea04f48acb74f": {
     name: "Ino Coin",
@@ -103,6 +117,7 @@ export const data = {
     symbol: "INO",
     coinGecko: "https://www.coingecko.com/en/coins/ino coin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/ino coin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xc9859fccc876e6b4b3c749c5d29ea04f48acb74f",
   },
   "0x0d8775f648430679a709e98d2b0cb6250d2887ef": {
     name: "Basic Attention Token",
@@ -110,6 +125,7 @@ export const data = {
     symbol: "BAT",
     coinGecko: "https://www.coingecko.com/en/coins/basic attention token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/basic attention token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x0d8775f648430679a709e98d2b0cb6250d2887ef",
   },
   "0xdd974d5c2e2928dea5f71b9825b8b646686bd200": {
     name: "Kyber Network Crystal",
@@ -117,6 +133,7 @@ export const data = {
     symbol: "KNC",
     coinGecko: "https://www.coingecko.com/en/coins/kyber network crystal#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/kyber network crystal/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
   },
   "0x75231f58b43240c9718dd58b4967c5114342a86c": {
     name: "OKB",
@@ -124,6 +141,7 @@ export const data = {
     symbol: "OKB",
     coinGecko: "https://www.coingecko.com/en/coins/okb#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/okb/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x75231f58b43240c9718dd58b4967c5114342a86c",
   },
   "0x5d64d850c8368008afb39224e92ad0dceff3cf38": {
     name: "MINDOL",
@@ -131,6 +149,7 @@ export const data = {
     symbol: "MIN",
     coinGecko: "https://www.coingecko.com/en/coins/mindol#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/mindol/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x5d64d850c8368008afb39224e92ad0dceff3cf38",
   },
   "0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9": {
     name: "FTT",
@@ -138,6 +157,7 @@ export const data = {
     symbol: "FTX Token",
     coinGecko: "https://www.coingecko.com/en/coins/ftt#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/ftt/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9",
   },
   "0xe41d2489571d322189246dafa5ebde1f4699f498": {
     name: "0x Protocol Token",
@@ -145,6 +165,7 @@ export const data = {
     symbol: "ZRX",
     coinGecko: "https://www.coingecko.com/en/coins/0x protocol token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/0x protocol token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xe41d2489571d322189246dafa5ebde1f4699f498",
   },
   "0x8e870d67f660d95d5be530380d0ec0bd388289e1": {
     name: "Paxos Standard",
@@ -152,6 +173,7 @@ export const data = {
     symbol: "PAX",
     coinGecko: "https://www.coingecko.com/en/coins/paxos standard#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/paxos standard/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x8e870d67f660d95d5be530380d0ec0bd388289e1",
   },
   "0x39e743fee400a5d9b36f1167b70c10e8f06440e5": {
     name: "TNC Group Token",
@@ -159,6 +181,7 @@ export const data = {
     symbol: "TNC",
     coinGecko: "https://www.coingecko.com/en/coins/tnc group token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/tnc group token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x39e743fee400a5d9b36f1167b70c10e8f06440e5",
   },
   "0xd26114cd6ee289accf82350c8d8487fedb8a0c07": {
     name: "OMGToken",
@@ -166,6 +189,7 @@ export const data = {
     symbol: "OMG",
     coinGecko: "https://www.coingecko.com/en/coins/omgtoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/omgtoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
   },
   "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f": {
     name: "Synthetix Network Token",
@@ -173,6 +197,7 @@ export const data = {
     symbol: "SNX",
     coinGecko: "https://www.coingecko.com/en/coins/synthetix network token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/synthetix network token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
   },
   "0x80fb784b7ed66730e8b1dbd9820afd29931aab03": {
     name: "EthLendToken",
@@ -180,6 +205,7 @@ export const data = {
     symbol: "LEND",
     coinGecko: "https://www.coingecko.com/en/coins/ethlendtoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/ethlendtoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x80fb784b7ed66730e8b1dbd9820afd29931aab03",
   },
   "0x6b175474e89094c44da98b954eedeac495271d0f": {
     name: "Multi-Collateral DAI",
@@ -187,6 +213,7 @@ export const data = {
     symbol: "DAI",
     coinGecko: "https://www.coingecko.com/en/coins/multi-collateral dai#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/multi-collateral dai/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f",
   },
   "0x4fabb145d64652a948d72533023f6e7a623c7c53": {
     name: "Binance USD",
@@ -194,6 +221,7 @@ export const data = {
     symbol: "BUSD",
     coinGecko: "https://www.coingecko.com/en/coins/binance usd#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/binance usd/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x4fabb145d64652a948d72533023f6e7a623c7c53",
   },
   "0x5319e86f0e41a06e49eb37046b8c11d78bcad68c": {
     name: "ZELWIN",
@@ -201,6 +229,7 @@ export const data = {
     symbol: "ZLW",
     coinGecko: "https://www.coingecko.com/en/coins/zelwin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/zelwin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x5319e86f0e41a06e49eb37046b8c11d78bcad68c",
   },
   "0x10086399dd8c1e3de736724af52587a2044c9fa2": {
     name: "The Midas Touch Gold",
@@ -208,6 +237,7 @@ export const data = {
     symbol: "TMTG",
     coinGecko: "https://www.coingecko.com/en/coins/the midas touch gold#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/the midas touch gold/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x10086399dd8c1e3de736724af52587a2044c9fa2",
   },
   "0xe99a894a69d7c2e3c92e61b64c505a6a57d2bc07": {
     name: "Hyperion Token",
@@ -215,6 +245,7 @@ export const data = {
     symbol: "HYN",
     coinGecko: "https://www.coingecko.com/en/coins/hyperion token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/hyperion token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xe99a894a69d7c2e3c92e61b64c505a6a57d2bc07",
   },
   "0x17aa18a4b64a55abed7fa543f2ba4e91f2dce482": {
     name: "Insight Chain",
@@ -222,6 +253,7 @@ export const data = {
     symbol: "INB",
     coinGecko: "https://www.coingecko.com/en/coins/insight chain#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/insight chain/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x17aa18a4b64a55abed7fa543f2ba4e91f2dce482",
   },
   "0x1cb3209d45b2a60b7fbca1ccdbf87f674237a4aa": {
     name: "ThoreCoin",
@@ -229,6 +261,7 @@ export const data = {
     symbol: "THR",
     coinGecko: "https://www.coingecko.com/en/coins/thorecoin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/thorecoin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x1cb3209d45b2a60b7fbca1ccdbf87f674237a4aa",
   },
   "0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c": {
     name: "Enjin Coin",
@@ -236,6 +269,7 @@ export const data = {
     symbol: "ENJ",
     coinGecko: "https://www.coingecko.com/en/coins/enjin coin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/enjin coin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c",
   },
   "0x0000000000085d4780b73119b644ae5ecd22b376": {
     name: "TrueUSD",
@@ -243,6 +277,7 @@ export const data = {
     symbol: "TUSD",
     coinGecko: "https://www.coingecko.com/en/coins/trueusd#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/trueusd/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x0000000000085d4780b73119b644ae5ecd22b376",
   },
   "0x408e41876cccdc0f92210600ef50372656052a38": {
     name: "Republic Token",
@@ -250,6 +285,7 @@ export const data = {
     symbol: "REN",
     coinGecko: "https://www.coingecko.com/en/coins/republic token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/republic token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x408e41876cccdc0f92210600ef50372656052a38",
   },
   "0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206": {
     name: "Nexo",
@@ -257,6 +293,7 @@ export const data = {
     symbol: "NEXO",
     coinGecko: "https://www.coingecko.com/en/coins/nexo#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/nexo/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206",
   },
   "0xdf574c24545e5ffecb9a659c229253d4111d87e1": {
     name: "HUSD",
@@ -264,6 +301,7 @@ export const data = {
     symbol: "HUSD",
     coinGecko: "https://www.coingecko.com/en/coins/husd#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/husd/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xdf574c24545e5ffecb9a659c229253d4111d87e1",
   },
   "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd": {
     name: "LoopringCoin V2",
@@ -271,6 +309,7 @@ export const data = {
     symbol: "LRC",
     coinGecko: "https://www.coingecko.com/en/coins/loopringcoin v2#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/loopringcoin v2/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xbbbbca6a901c926f240b89eacb641d8aec7aeafd",
   },
   "0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d": {
     name: "Celsius",
@@ -278,6 +317,7 @@ export const data = {
     symbol: "CEL",
     coinGecko: "https://www.coingecko.com/en/coins/celsius#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/celsius/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xaaaebe6fe48e54f431b0c390cfaf0b017d09d42d",
   },
   "0x4a220e6096b25eadb88358cb44068a3248254675": {
     name: "Quant",
@@ -285,6 +325,7 @@ export const data = {
     symbol: "QNT",
     coinGecko: "https://www.coingecko.com/en/coins/quant#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/quant/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x4a220e6096b25eadb88358cb44068a3248254675",
   },
   "0xbd0793332e9fb844a52a205a233ef27a5b34b927": {
     name: "ZBToken",
@@ -292,6 +333,7 @@ export const data = {
     symbol: "ZB",
     coinGecko: "https://www.coingecko.com/en/coins/zbtoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/zbtoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xbd0793332e9fb844a52a205a233ef27a5b34b927",
   },
   "0x973e52691176d36453868d9d86572788d27041a9": {
     name: "DxChain Token",
@@ -299,6 +341,7 @@ export const data = {
     symbol: "DX",
     coinGecko: "https://www.coingecko.com/en/coins/dxchain token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/dxchain token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x973e52691176d36453868d9d86572788d27041a9",
   },
   "0xb1a30851e3f7d841b231b086479608e17198363a": {
     name: "HOMEROS",
@@ -306,6 +349,7 @@ export const data = {
     symbol: "HMR",
     coinGecko: "https://www.coingecko.com/en/coins/homeros#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/homeros/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xb1a30851e3f7d841b231b086479608e17198363a",
   },
   "0xada62f7ccd6af6cacff04accbc4f56f3d4ffd4ef": {
     name: "PlayFuel",
@@ -313,6 +357,7 @@ export const data = {
     symbol: "PLF",
     coinGecko: "https://www.coingecko.com/en/coins/playfuel#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/playfuel/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xada62f7ccd6af6cacff04accbc4f56f3d4ffd4ef",
   },
   "0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c": {
     name: "Bancor Network Token",
@@ -320,6 +365,7 @@ export const data = {
     symbol: "BNT",
     coinGecko: "https://www.coingecko.com/en/coins/bancor network token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/bancor network token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c",
   },
   "0x4a57e687b9126435a9b19e4a802113e266adebde": {
     name: "Flexacoin",
@@ -327,6 +373,7 @@ export const data = {
     symbol: "FXC",
     coinGecko: "https://www.coingecko.com/en/coins/flexacoin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/flexacoin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x4a57e687b9126435a9b19e4a802113e266adebde",
   },
   "0x6c6ee5e31d828de241282b9606c8e98ea48526e2": {
     name: "HoloToken",
@@ -334,6 +381,7 @@ export const data = {
     symbol: "HOT",
     coinGecko: "https://www.coingecko.com/en/coins/holotoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/holotoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x6c6ee5e31d828de241282b9606c8e98ea48526e2",
   },
   "0xef19f4e48830093ce5bc8b3ff7f903a0ae3e9fa1": {
     name: "botXcoin",
@@ -341,6 +389,7 @@ export const data = {
     symbol: "BOTX",
     coinGecko: "https://www.coingecko.com/en/coins/botxcoin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/botxcoin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xef19f4e48830093ce5bc8b3ff7f903a0ae3e9fa1",
   },
   "0x744d70fdbe2ba4cf95131626614a1763df805b9e": {
     name: "Status Network",
@@ -348,6 +397,7 @@ export const data = {
     symbol: "SNT",
     coinGecko: "https://www.coingecko.com/en/coins/status network#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/status network/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x744d70fdbe2ba4cf95131626614a1763df805b9e",
   },
   "0xa974c709cfb4566686553a20790685a47aceaa33": {
     name: "Mixin",
@@ -355,6 +405,7 @@ export const data = {
     symbol: "XIN",
     coinGecko: "https://www.coingecko.com/en/coins/mixin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/mixin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xa974c709cfb4566686553a20790685a47aceaa33",
   },
   "0x8971f9fd7196e5cee2c1032b50f656855af7dd26": {
     name: "Lambda",
@@ -362,6 +413,7 @@ export const data = {
     symbol: "LAMB",
     coinGecko: "https://www.coingecko.com/en/coins/lambda#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/lambda/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x8971f9fd7196e5cee2c1032b50f656855af7dd26",
   },
   "0x1c48f86ae57291f7686349f12601910bd8d470bb": {
     name: "USDK",
@@ -369,6 +421,7 @@ export const data = {
     symbol: "USDK",
     coinGecko: "https://www.coingecko.com/en/coins/usdk#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/usdk/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x1c48f86ae57291f7686349f12601910bd8d470bb",
   },
   "0x32d74896f05204d1b6ae7b0a3cebd7fc0cd8f9c7": {
     name: "Kcash",
@@ -376,6 +429,7 @@ export const data = {
     symbol: "KCASH",
     coinGecko: "https://www.coingecko.com/en/coins/kcash#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/kcash/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x32d74896f05204d1b6ae7b0a3cebd7fc0cd8f9c7",
   },
   "0x4e15361fd6b4bb609fa63c81a2be19d873717870": {
     name: "Fantom Token",
@@ -383,6 +437,7 @@ export const data = {
     symbol: "FTM",
     coinGecko: "https://www.coingecko.com/en/coins/fantom token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/fantom token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x4e15361fd6b4bb609fa63c81a2be19d873717870",
   },
   "0x1a3496c18d558bd9c6c8f609e1b129f67ab08163": {
     name: "DEAPCOIN",
@@ -390,6 +445,7 @@ export const data = {
     symbol: "DEP",
     coinGecko: "https://www.coingecko.com/en/coins/deapcoin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/deapcoin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x1a3496c18d558bd9c6c8f609e1b129f67ab08163",
   },
   "0xbf2179859fc6d5bee9bf9158632dc51678a4100e": {
     name: "ELF Token",
@@ -397,6 +453,7 @@ export const data = {
     symbol: "ELF",
     coinGecko: "https://www.coingecko.com/en/coins/elf token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/elf token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xbf2179859fc6d5bee9bf9158632dc51678a4100e",
   },
   "0x7788d759f21f53533051a9ae657fa05a1e068fc6": {
     name: "Fleta Token",
@@ -404,6 +461,7 @@ export const data = {
     symbol: "FLETA",
     coinGecko: "https://www.coingecko.com/en/coins/fleta token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/fleta token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x7788d759f21f53533051a9ae657fa05a1e068fc6",
   },
   "0xb63b606ac810a52cca15e44bb630fd42d8d1d83d": {
     name: "Monaco",
@@ -411,6 +469,7 @@ export const data = {
     symbol: "MCO",
     coinGecko: "https://www.coingecko.com/en/coins/monaco#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/monaco/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xb63b606ac810a52cca15e44bb630fd42d8d1d83d",
   },
   "0x6ec47a178a9d50d4ec4683003d8324f19ca35382": {
     name: "NDN Link",
@@ -418,6 +477,7 @@ export const data = {
     symbol: "NDN",
     coinGecko: "https://www.coingecko.com/en/coins/ndn link#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/ndn link/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x6ec47a178a9d50d4ec4683003d8324f19ca35382",
   },
   "0xe66747a101bff2dba3697199dcce5b743b454759": {
     name: "GateChainToken",
@@ -425,6 +485,7 @@ export const data = {
     symbol: "GT",
     coinGecko: "https://www.coingecko.com/en/coins/gatechaintoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/gatechaintoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xe66747a101bff2dba3697199dcce5b743b454759",
   },
   "0x8207c1ffc5b6804f6024322ccf34f29c3541ae26": {
     name: "OriginToken",
@@ -432,6 +493,7 @@ export const data = {
     symbol: "OGN",
     coinGecko: "https://www.coingecko.com/en/coins/origintoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/origintoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x8207c1ffc5b6804f6024322ccf34f29c3541ae26",
   },
   "0x6bc1f3a1ae56231dbb64d3e82e070857eae86045": {
     name: "xensor",
@@ -439,6 +501,7 @@ export const data = {
     symbol: "XSR",
     coinGecko: "https://www.coingecko.com/en/coins/xensor#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/xensor/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x6bc1f3a1ae56231dbb64d3e82e070857eae86045",
   },
   "0xc21dbee65d62770953035f0434c532d578a666c9": {
     name: "CryptoEnergy",
@@ -446,13 +509,7 @@ export const data = {
     symbol: "CNRG",
     coinGecko: "https://www.coingecko.com/en/coins/cryptoenergy#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/cryptoenergy/markets",
-  },
-  "0xfb444c1f2b718ddfc385cb8fd9f2d1d776b24668": {
-    name: "ELA Coin",
-    address: "0xfb444c1f2b718ddfc385cb8fd9f2d1d776b24668",
-    symbol: "ELAMA",
-    coinGecko: "https://www.coingecko.com/en/coins/ela coin#markets",
-    coinMarketCap: "https://coinmarketcap.com/currencies/ela coin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xc21dbee65d62770953035f0434c532d578a666c9",
   },
   "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0": {
     name: "Matic Token",
@@ -460,6 +517,15 @@ export const data = {
     symbol: "MATIC",
     coinGecko: "https://www.coingecko.com/en/coins/matic token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/matic token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+  },
+  "0xfb444c1f2b718ddfc385cb8fd9f2d1d776b24668": {
+    name: "ELA Coin",
+    address: "0xfb444c1f2b718ddfc385cb8fd9f2d1d776b24668",
+    symbol: "ELAMA",
+    coinGecko: "https://www.coingecko.com/en/coins/ela coin#markets",
+    coinMarketCap: "https://coinmarketcap.com/currencies/ela coin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xfb444c1f2b718ddfc385cb8fd9f2d1d776b24668",
   },
   "0x0f5d2fb29fb7d3cfee444a200298f468908cc942": {
     name: "Decentraland",
@@ -467,6 +533,7 @@ export const data = {
     symbol: "MANA",
     coinGecko: "https://www.coingecko.com/en/coins/decentraland#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/decentraland/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
   },
   "0x6ec8a24cabdc339a06a172f8223ea557055adaa5": {
     name: "Genaro X",
@@ -474,6 +541,7 @@ export const data = {
     symbol: "GNX",
     coinGecko: "https://www.coingecko.com/en/coins/genaro x#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/genaro x/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x6ec8a24cabdc339a06a172f8223ea557055adaa5",
   },
   "0xc5bbae50781be1669306b9e001eff57a2957b09d": {
     name: "Gifto",
@@ -481,6 +549,7 @@ export const data = {
     symbol: "GTO",
     coinGecko: "https://www.coingecko.com/en/coins/gifto#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/gifto/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xc5bbae50781be1669306b9e001eff57a2957b09d",
   },
   "0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0": {
     name: "LoomToken",
@@ -488,6 +557,7 @@ export const data = {
     symbol: "LOOM",
     coinGecko: "https://www.coingecko.com/en/coins/loomtoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/loomtoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xa4e8c3ec456107ea67d3075bf9e3df3a75823db0",
   },
   "0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e": {
     name: "SwftCoin",
@@ -495,6 +565,7 @@ export const data = {
     symbol: "SWFTC",
     coinGecko: "https://www.coingecko.com/en/coins/swftcoin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/swftcoin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e",
   },
   "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd": {
     name: "Gemini dollar",
@@ -502,13 +573,7 @@ export const data = {
     symbol: "GUSD",
     coinGecko: "https://www.coingecko.com/en/coins/gemini dollar#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/gemini dollar/markets",
-  },
-  "0x915044526758533dfb918eceb6e44bc21632060d": {
-    name: "Chroma",
-    address: "0x915044526758533dfb918eceb6e44bc21632060d",
-    symbol: "CHR",
-    coinGecko: "https://www.coingecko.com/en/coins/chroma#markets",
-    coinMarketCap: "https://coinmarketcap.com/currencies/chroma/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x056fd409e1d7a124bd7017459dfea2f387b6d5cd",
   },
   "0xcad49c39b72c37b32cee8b14f33f316d3a8bc335": {
     name: "SODA Coin",
@@ -516,6 +581,15 @@ export const data = {
     symbol: "SOC",
     coinGecko: "https://www.coingecko.com/en/coins/soda coin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/soda coin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xcad49c39b72c37b32cee8b14f33f316d3a8bc335",
+  },
+  "0x915044526758533dfb918eceb6e44bc21632060d": {
+    name: "Chroma",
+    address: "0x915044526758533dfb918eceb6e44bc21632060d",
+    symbol: "CHR",
+    coinGecko: "https://www.coingecko.com/en/coins/chroma#markets",
+    coinMarketCap: "https://coinmarketcap.com/currencies/chroma/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x915044526758533dfb918eceb6e44bc21632060d",
   },
   "0xd0bd12a8d5ebca1e2fa46da59f1993ec51c3d75c": {
     name: "BKEX Token",
@@ -523,6 +597,7 @@ export const data = {
     symbol: "BK",
     coinGecko: "https://www.coingecko.com/en/coins/bkex token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/bkex token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xd0bd12a8d5ebca1e2fa46da59f1993ec51c3d75c",
   },
   "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
     name: "Wrapped Ether",
@@ -530,6 +605,7 @@ export const data = {
     symbol: "WETH",
     coinGecko: "https://www.coingecko.com/en/coins/wrapped ether#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/wrapped ether/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
   },
   "0xe62e6e6c3b808faad3a54b226379466544d76ea4": {
     name: "Liberty Cash",
@@ -537,6 +613,7 @@ export const data = {
     symbol: "LCS",
     coinGecko: "https://www.coingecko.com/en/coins/liberty cash#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/liberty cash/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xe62e6e6c3b808faad3a54b226379466544d76ea4",
   },
   "0x9dffe202df7f82ba57a7f8d571628805eff7fed9": {
     name: "Green (China) ecosystem",
@@ -544,6 +621,7 @@ export const data = {
     symbol: "GEC",
     coinGecko: "https://www.coingecko.com/en/coins/green (china) ecosystem#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/green (china) ecosystem/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x9dffe202df7f82ba57a7f8d571628805eff7fed9",
   },
   "0x37ee79e0b44866876de2fb7f416d0443dd5ae481": {
     name: "Tatcoin",
@@ -551,6 +629,7 @@ export const data = {
     symbol: "TAT",
     coinGecko: "https://www.coingecko.com/en/coins/tatcoin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/tatcoin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x37ee79e0b44866876de2fb7f416d0443dd5ae481",
   },
   "0xa1b19bcd50a24be0cb399c1ec0f7ca546b94a2b0": {
     name: "Future Digital Games",
@@ -558,6 +637,7 @@ export const data = {
     symbol: "FDG",
     coinGecko: "https://www.coingecko.com/en/coins/future digital games#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/future digital games/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xa1b19bcd50a24be0cb399c1ec0f7ca546b94a2b0",
   },
   "0x0000000000004946c0e9f43f4dee607b0ef1fa1c": {
     name: "Chi Gastoken by 1inch",
@@ -565,6 +645,7 @@ export const data = {
     symbol: "CHI",
     coinGecko: "https://www.coingecko.com/en/coins/chi gastoken by 1inch#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/chi gastoken by 1inch/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x0000000000004946c0e9f43f4dee607b0ef1fa1c",
   },
   "0x04abeda201850ac0124161f037efd70c74ddc74c": {
     name: "NEST",
@@ -572,6 +653,7 @@ export const data = {
     symbol: "NEST",
     coinGecko: "https://www.coingecko.com/en/coins/nest#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/nest/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x04abeda201850ac0124161f037efd70c74ddc74c",
   },
   "0xa3f440ef604a6380a030360f85bb0dedb6db5a85": {
     name: "Alchemy Coin",
@@ -579,6 +661,7 @@ export const data = {
     symbol: "ALC",
     coinGecko: "https://www.coingecko.com/en/coins/alchemy coin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/alchemy coin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xa3f440ef604a6380a030360f85bb0dedb6db5a85",
   },
   "0x5d285f735998f36631f678ff41fb56a10a4d0429": {
     name: "MixMarvel Token",
@@ -586,6 +669,7 @@ export const data = {
     symbol: "MIX",
     coinGecko: "https://www.coingecko.com/en/coins/mixmarvel token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/mixmarvel token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x5d285f735998f36631f678ff41fb56a10a4d0429",
   },
   "0xeeee2a622330e6d2036691e983dee87330588603": {
     name: "Askobar Network",
@@ -593,6 +677,7 @@ export const data = {
     symbol: "ASKO",
     coinGecko: "https://www.coingecko.com/en/coins/askobar network#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/askobar network/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xeeee2a622330e6d2036691e983dee87330588603",
   },
   "0xf9986d445ced31882377b5d6a5f58eaea72288c3": {
     name: "Elrond",
@@ -600,6 +685,7 @@ export const data = {
     symbol: "ERD",
     coinGecko: "https://www.coingecko.com/en/coins/elrond#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/elrond/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xf9986d445ced31882377b5d6a5f58eaea72288c3",
   },
   "0x469eda64aed3a3ad6f868c44564291aa415cb1d9": {
     name: "FLUX",
@@ -607,6 +693,7 @@ export const data = {
     symbol: "FLUX",
     coinGecko: "https://www.coingecko.com/en/coins/flux#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/flux/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x469eda64aed3a3ad6f868c44564291aa415cb1d9",
   },
   "0xf80d589b3dbe130c270a69f1a69d050f268786df": {
     name: "Datamine",
@@ -614,6 +701,7 @@ export const data = {
     symbol: "DAM",
     coinGecko: "https://www.coingecko.com/en/coins/datamine#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/datamine/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xf80d589b3dbe130c270a69f1a69d050f268786df",
   },
   "0x1519aff03b3e23722511d2576c769a77baf09580": {
     name: "B91Token",
@@ -621,6 +709,7 @@ export const data = {
     symbol: "B91",
     coinGecko: "https://www.coingecko.com/en/coins/b91token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/b91token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x1519aff03b3e23722511d2576c769a77baf09580",
   },
   "0xed91879919b71bb6905f23af0a68d231ecf87b14": {
     name: "DMM: Governance",
@@ -628,6 +717,7 @@ export const data = {
     symbol: "DMG",
     coinGecko: "https://www.coingecko.com/en/coins/dmm: governance#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/dmm: governance/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xed91879919b71bb6905f23af0a68d231ecf87b14",
   },
   "0xc6cc22f88edae6667763f7745d4ecd297d535540": {
     name: "Global Alliance of Cultural and Art Block Chains",
@@ -635,6 +725,7 @@ export const data = {
     symbol: "GABA",
     coinGecko: "https://www.coingecko.com/en/coins/global alliance of cultural and art block chains#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/global alliance of cultural and art block chains/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xc6cc22f88edae6667763f7745d4ecd297d535540",
   },
   "0x0bb7db697567178c590efa64a7dcb2ce6213768c": {
     name: "Camouflage.eth",
@@ -642,6 +733,7 @@ export const data = {
     symbol: "CAMO",
     coinGecko: "https://www.coingecko.com/en/coins/camouflage.eth#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/camouflage.eth/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x0bb7db697567178c590efa64a7dcb2ce6213768c",
   },
   "0x912656188616e0184e3181f019022990a63280b1": {
     name: "POCC",
@@ -649,6 +741,7 @@ export const data = {
     symbol: "POCC",
     coinGecko: "https://www.coingecko.com/en/coins/pocc#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/pocc/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x912656188616e0184e3181f019022990a63280b1",
   },
   "0xa821f14fb6394e82839f5161f214cacc90372453": {
     name: "Esch$Token",
@@ -656,6 +749,7 @@ export const data = {
     symbol: "ESCH$",
     coinGecko: "https://www.coingecko.com/en/coins/esch$token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/esch$token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xa821f14fb6394e82839f5161f214cacc90372453",
   },
   "0x8fdcc30eda7e94f1c12ce0280df6cd531e8365c5": {
     name: "CpcToken",
@@ -663,6 +757,7 @@ export const data = {
     symbol: "CPCT",
     coinGecko: "https://www.coingecko.com/en/coins/cpctoken#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/cpctoken/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x8fdcc30eda7e94f1c12ce0280df6cd531e8365c5",
   },
   "0x3cc5eb07e0e1227613f1df58f38b549823d11cb9": {
     name: "EthereumeRush",
@@ -670,6 +765,7 @@ export const data = {
     symbol: "EER",
     coinGecko: "https://www.coingecko.com/en/coins/ethereumerush#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/ethereumerush/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x3cc5eb07e0e1227613f1df58f38b549823d11cb9",
   },
   "0x57ab1ec28d129707052df4df418d58a2d46d5f51": {
     name: "Synth sUSD",
@@ -677,6 +773,7 @@ export const data = {
     symbol: "sUSD",
     coinGecko: "https://www.coingecko.com/en/coins/synth susd#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/synth susd/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x57ab1ec28d129707052df4df418d58a2d46d5f51",
   },
   "0xb64ef51c888972c908cfacf59b47c1afbc0ab8ac": {
     name: "STORJ",
@@ -684,6 +781,7 @@ export const data = {
     symbol: "STORJ",
     coinGecko: "https://www.coingecko.com/en/coins/storj#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/storj/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xb64ef51c888972c908cfacf59b47c1afbc0ab8ac",
   },
   "0xd46ba6d942050d489dbd938a2c909a5d5039a161": {
     name: "Ampleforth",
@@ -691,6 +789,7 @@ export const data = {
     symbol: "AMPL",
     coinGecko: "https://www.coingecko.com/en/coins/ampleforth#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/ampleforth/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xd46ba6d942050d489dbd938a2c909a5d5039a161",
   },
   "0xcbf2af75f33a36afa29870274c8e6893a8d0d806": {
     name: "LUNA",
@@ -698,6 +797,7 @@ export const data = {
     symbol: "LUNA",
     coinGecko: "https://www.coingecko.com/en/coins/luna#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/luna/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xcbf2af75f33a36afa29870274c8e6893a8d0d806",
   },
   "0x65c0469fa7a3ceb8130598e90f5f76c11b7e51aa": {
     name: "WinCoin",
@@ -705,6 +805,7 @@ export const data = {
     symbol: "WIN",
     coinGecko: "https://www.coingecko.com/en/coins/wincoin#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/wincoin/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x65c0469fa7a3ceb8130598e90f5f76c11b7e51aa",
   },
   "0xd15ecdcf5ea68e3995b2d0527a0ae0a3258302f8": {
     name: "MachiX Token",
@@ -712,6 +813,7 @@ export const data = {
     symbol: "MCX",
     coinGecko: "https://www.coingecko.com/en/coins/machix token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/machix token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xd15ecdcf5ea68e3995b2d0527a0ae0a3258302f8",
   },
   "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": {
     name: "Wrapped BTC",
@@ -719,6 +821,7 @@ export const data = {
     symbol: "WBTC",
     coinGecko: "https://www.coingecko.com/en/coins/wrapped btc#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/wrapped btc/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
   },
   "0x35fbc59b87229d3beddbfb1d3c1d7a97ee0c4fff": {
     name: "Adrenaline Token",
@@ -726,6 +829,7 @@ export const data = {
     symbol: "ADR",
     coinGecko: "https://www.coingecko.com/en/coins/adrenaline token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/adrenaline token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x35fbc59b87229d3beddbfb1d3c1d7a97ee0c4fff",
   },
   "0xf9e5af7b42d31d51677c75bbbd37c1986ec79aee": {
     name: "QuickX Protocol",
@@ -733,6 +837,7 @@ export const data = {
     symbol: "QCX",
     coinGecko: "https://www.coingecko.com/en/coins/quickx protocol#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/quickx protocol/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0xf9e5af7b42d31d51677c75bbbd37c1986ec79aee",
   },
   "0x43044f861ec040db59a7e324c40507addb673142": {
     name: "Cap",
@@ -740,6 +845,7 @@ export const data = {
     symbol: "CAP",
     coinGecko: "https://www.coingecko.com/en/coins/cap#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/cap/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x43044f861ec040db59a7e324c40507addb673142",
   },
   "0x8a9c67fee641579deba04928c4bc45f66e26343a": {
     name: "Jarvis Reward Token",
@@ -747,6 +853,7 @@ export const data = {
     symbol: "JRT",
     coinGecko: "https://www.coingecko.com/en/coins/jarvis reward token#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/jarvis reward token/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x8a9c67fee641579deba04928c4bc45f66e26343a",
   },
   "0x1b76d0364e803fb94c1d5ca9faf55f05ee494731": {
     name: "Uniswap Community Network",
@@ -754,6 +861,7 @@ export const data = {
     symbol: "UCN",
     coinGecko: "https://www.coingecko.com/en/coins/uniswap community network#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/uniswap community network/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x1b76d0364e803fb94c1d5ca9faf55f05ee494731",
   },
   "0x8762db106b2c2a0bccb3a80d1ed41273552616e8": {
     name: "Reserve Rights",
@@ -761,5 +869,6 @@ export const data = {
     symbol: "RSR",
     coinGecko: "https://www.coingecko.com/en/coins/reserve rights#markets",
     coinMarketCap: "https://coinmarketcap.com/currencies/reserve rights/markets",
+    uniSwap: "https://app.uniswap.org/#/swap?inputCurrency=0x8762db106b2c2a0bccb3a80d1ed41273552616e8",
   },
 }

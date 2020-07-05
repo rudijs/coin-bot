@@ -1,8 +1,9 @@
-import { getTokens, getTokenPriceHistoryGrouped, tokenReport, sort } from "./ethplorer"
+import { getTokens, getTokenPriceHistoryGrouped, tokenReport, sort, formatReport } from "./ethplorer"
 import topCapitalization from "./fixtures/ethplorer-top-50-erc-20-cap.json"
 import tokenPriceHistory from "./fixtures/tokenPriceHistoryGrouped.json"
 import { data } from "./fixtures/ethplorer-top-50-erc-20-all"
 import { data as ethplorerReport } from "./fixtures/ethplorerReport"
+import { data as ethplorerReportSorted } from "./fixtures/ethplorerReportSorted"
 
 describe("#ethplorer", () => {
   test("#getTokens", async () => {
@@ -41,5 +42,10 @@ describe("#ethplorer", () => {
   test("#sort", () => {
     const report = sort(ethplorerReport)
     // console.log(report)
+  })
+
+  test("#formatReport", () => {
+    const reportFormated = formatReport(ethplorerReportSorted)
+    // console.log(reportFormated)
   })
 })

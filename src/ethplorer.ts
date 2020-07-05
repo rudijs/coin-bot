@@ -122,7 +122,7 @@ export const tokenReport = async (axios: any, tokenList: any, apiKey: string) =>
 }
 
 export const sort = function (data: any) {
-  const report: any = { SELL: [], BUY: [], NOT_HOLD: [], HOLD: [] }
+  const report: any = { SELL: [], BUY: [], HOLD: [], NOT_HOLD: [] }
 
   // console.log(data)
   for (const item in data) {
@@ -135,4 +135,55 @@ export const sort = function (data: any) {
   }
 
   return report
+}
+
+export const formatReport = (data: any) => {
+  const colors: any = {
+    SELL: "#f3d8d7",
+    BUY: "#a5eabf",
+    HOLD: "#a5d7f4",
+    NOT_HOLD: "#925b4d",
+    UNKNOWN: "#c5c5c5",
+  }
+
+  let body = `<html><head><style>
+      table {
+        border-collapse: collapse;
+        margin-bottom: 50px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 15px;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+</style>
+</head>
+<body><div class="box">\n`
+
+  // console.log(data)
+  for (const posture of Object.keys(data)) {
+    for (const item of data[posture]) {
+      body += `<table style="background-color: ${colors[item.priceHistory.posture]}">
+    <tr><td>${item.symbol}</td><td>${item.name}</td><td>${item.address}</td></tr>
+    <tr><td colspan="3"><a href="${item.coinGecko}" target="_blank">${item.coinGecko}</a></td></tr>
+    <tr><td colspan="3"><a href="${item.coinMarketCap}" target="_blank">${item.coinMarketCap}</a></td></tr>
+    <tr><td colspan="3"><a href="${item.bitscreener}" target="_blank">${item.bitscreener}</a></td></tr>
+    <tr><td colspan="3"><a href="${item.oneInch}" target="_blank">${item.oneInch}</a></td></tr>
+    <tr><td colspan="3"><a href="${item.uniSwap}" target="_blank">${item.uniSwap}</a></td></tr>
+    </table>\n`
+    }
+  }
+
+  body += "</div></body></html>"
+
+  return body
+  // return "done"
 }

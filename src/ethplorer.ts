@@ -34,7 +34,9 @@ function appendTokens(tokens: any, data: any) {
         symbol: item.symbol,
         coinGecko: `https://www.coingecko.com/en/coins/${item.name.toLowerCase()}#markets`,
         coinMarketCap: `https://coinmarketcap.com/currencies/${item.name.toLowerCase()}/markets`,
+        bitscreener: `https://bitscreener.com/coins/${item.name.toLowerCase()}`,
         uniSwap: `https://app.uniswap.org/#/swap?inputCurrency=${item.address}`,
+        oneInch: `https://1inch.exchange/#/ETH/${item.symbol}`,
       }
     }
   }
@@ -117,4 +119,20 @@ export const tokenReport = async (axios: any, tokenList: any, apiKey: string) =>
   }
   // console.log(tokenList)
   return tokenList
+}
+
+export const sort = function (data: any) {
+  const report: any = { SELL: [], BUY: [], NOT_HOLD: [], HOLD: [] }
+
+  // console.log(data)
+  for (const item in data) {
+    // console.log(item)
+    if (report[data[item].priceHistory.posture]) {
+      report[data[item].priceHistory.posture].push(data[item])
+    } else {
+      report[data[item].priceHistory.posture] = [data[item]]
+    }
+  }
+
+  return report
 }

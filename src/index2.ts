@@ -1,5 +1,5 @@
 import * as axios from "axios"
-import { getTokens, tokenReport } from "./ethplorer"
+import { getTokens, tokenReport, sort } from "./ethplorer"
 
 const main = async () => {
   if (!process.env.API_KEY) throw new Error("Missing required API_KEY")
@@ -10,7 +10,16 @@ const main = async () => {
   const report = await tokenReport(axios, res, process.env.API_KEY)
   // console.log(report)
 
-  return JSON.stringify(report)
+  const sortedReport = sort(report)
+
+  console.log(JSON.stringify(sortedReport.SELL, null, 2))
+  console.log(JSON.stringify(sortedReport.BUY, null, 2))
+  console.log(JSON.stringify(sortedReport.HOLD, null, 2))
+  console.log(JSON.stringify(sortedReport.NOT_HOLD, null, 2))
+  console.log(JSON.stringify(sortedReport.UNKNOWN, null, 2))
+
+  // return JSON.stringify(report)
+  return "Done"
 }
 
 main()

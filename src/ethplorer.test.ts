@@ -1,7 +1,8 @@
-import { getTokens, getTokenPriceHistoryGrouped, tokenReport } from "./ethplorer"
+import { getTokens, getTokenPriceHistoryGrouped, tokenReport, sort } from "./ethplorer"
 import topCapitalization from "./fixtures/ethplorer-top-50-erc-20-cap.json"
 import tokenPriceHistory from "./fixtures/tokenPriceHistoryGrouped.json"
 import { data } from "./fixtures/ethplorer-top-50-erc-20-all"
+import { data as ethplorerReport } from "./fixtures/ethplorerReport"
 
 describe("#ethplorer", () => {
   test("#getTokens", async () => {
@@ -35,5 +36,10 @@ describe("#ethplorer", () => {
     const axiosMock = { get: () => Promise.resolve({ data: tokenPriceHistory }) }
     const res = await tokenReport(axiosMock, data, "abc123")
     // console.log(res)
+  })
+
+  test("#sort", () => {
+    const report = sort(ethplorerReport)
+    // console.log(report)
   })
 })

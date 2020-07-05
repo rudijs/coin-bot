@@ -1,5 +1,5 @@
 import { coinsMarkets, coinPriceHistory } from "./coinGecko"
-import { sort } from "./report"
+import { sort, formatReport } from "./report"
 import * as axios from "axios"
 
 const main = async () => {
@@ -10,10 +10,16 @@ const main = async () => {
   // console.log(signals)
 
   const sortedSignals = sort(signals)
-  console.log("SELL", JSON.stringify(sortedSignals.SELL, null, 2))
-  console.log("BUY", JSON.stringify(sortedSignals.BUY, null, 2))
-  console.log("HOLD", JSON.stringify(sortedSignals.HOLD, null, 2))
-  console.log("NOT_HOLD", JSON.stringify(sortedSignals.NOT_HOLD, null, 2))
+
+  const htmlReport = formatReport(sortedSignals)
+  console.log(htmlReport)
+
+  return ""
+
+  // console.log("SELL", JSON.stringify(sortedSignals.SELL, null, 2))
+  // console.log("BUY", JSON.stringify(sortedSignals.BUY, null, 2))
+  // console.log("HOLD", JSON.stringify(sortedSignals.HOLD, null, 2))
+  // console.log("NOT_HOLD", JSON.stringify(sortedSignals.NOT_HOLD, null, 2))
 }
 
 main()

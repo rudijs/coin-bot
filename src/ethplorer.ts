@@ -34,7 +34,7 @@ function appendTokens(tokens: any, data: any) {
         symbol: item.symbol,
         coinGecko: `https://www.coingecko.com/en/coins/${item.name.toLowerCase()}#markets`,
         coinMarketCap: `https://coinmarketcap.com/currencies/${item.name.toLowerCase()}/markets`,
-        bitscreener: `https://bitscreener.com/coins/${item.name.toLowerCase()}`,
+        bitscreener: `https://bitscreener.com/coins/${item.name.toLowerCase()}/chart`,
         uniSwap: `https://app.uniswap.org/#/swap?inputCurrency=${item.address}`,
         oneInch: `https://1inch.exchange/#/ETH/${item.symbol}`,
       }
@@ -173,9 +173,9 @@ export const formatReport = (data: any) => {
     for (const item of data[posture]) {
       body += `<table style="background-color: ${colors[item.priceHistory.posture]}">
     <tr><td>${item.symbol}</td><td>${item.name}</td><td>${item.address}</td></tr>
+    <tr><td colspan="3"><a href="${item.bitscreener}" target="_blank">${item.bitscreener}</a></td></tr>
     <tr><td colspan="3"><a href="${item.coinGecko}" target="_blank">${item.coinGecko}</a></td></tr>
     <tr><td colspan="3"><a href="${item.coinMarketCap}" target="_blank">${item.coinMarketCap}</a></td></tr>
-    <tr><td colspan="3"><a href="${item.bitscreener}" target="_blank">${item.bitscreener}</a></td></tr>
     <tr><td colspan="3"><a href="${item.oneInch}" target="_blank">${item.oneInch}</a></td></tr>
     <tr><td colspan="3"><a href="${item.uniSwap}" target="_blank">${item.uniSwap}</a></td></tr>
     </table>\n`

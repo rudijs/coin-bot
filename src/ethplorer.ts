@@ -32,6 +32,7 @@ function appendTokens(tokens: any, data: any) {
         symbol: item.symbol,
         coinGecko: `https://www.coingecko.com/en/coins/${item.name.toLowerCase()}#markets`,
         coinMarketCap: `https://coinmarketcap.com/currencies/${item.name.toLowerCase()}/markets`,
+        uniSwap: `https://app.uniswap.org/#/swap?inputCurrency=${item.address}`,
       }
     }
   }

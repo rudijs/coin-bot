@@ -68,15 +68,15 @@ if prev < 8 then NOT_HOLD
 
     // if we are above the Daily 21 EMA look for entry/exit
     if (currentPrice > currentEma21) {
-      // are we above the Daily 8 EMA
-      if (currentPrice > currentEma8) {
+      // are we above the Daily 8 EMA and the Daily 8 EMA is above the Daily 21 EMA
+      if (currentPrice > currentEma8 && currentEma8 > currentEma21) {
         // if we just moved above the Daily 8 EMA it's a Buy
         if (previousPrice < previousEma8) posture = "BUY"
         // if we are still above the Daily 8 EMA it's a Hold
         if (previousPrice > previousEma8) posture = "HOLD"
       }
 
-      // are we below the Daily 8 EMA
+      // are we are below the Daily 8 EMA
       if (currentPrice < currentEma8) {
         // if we just moved below the Daily 8 EMA it's a Sell
         if (previousPrice > previousEma8) posture = "SELL"
@@ -95,7 +95,9 @@ if prev < 8 then NOT_HOLD
 
     // coingecko.com free API has a rate limit of 100 calls per minute - if you exceed that limit you will be blocked until the next 1 minute window
     // so we'll wait one second between api calls
-    await sleep(1000)
+    if (process.env.NODE_ENV !== "test") {
+      await sleep(1000)
+    }
   }
 
   return report

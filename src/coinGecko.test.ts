@@ -21,17 +21,17 @@ describe("coinsGecko", () => {
 
     const expected = {
       bitcoin: {
-        currentPrice: 9071.3850427828,
-        currentEma21: 9276.917919047457,
-        currentEma8: 9164.259490508795,
-        previousEma8: 9190.795047001937,
+        currentPrice: 9068.829235023099,
+        currentEma21: 9258.000765954333,
+        currentEma8: 9143.05276706753,
+        previousEma8: 9164.259490508795,
         posture: "NOT_HOLD",
       },
       binancecoin: {
-        currentPrice: 9071.3850427828,
-        currentEma21: 9276.917919047457,
-        currentEma8: 9164.259490508795,
-        previousEma8: 9190.795047001937,
+        currentPrice: 9068.829235023099,
+        currentEma21: 9258.000765954333,
+        currentEma8: 9143.05276706753,
+        previousEma8: 9164.259490508795,
         posture: "NOT_HOLD",
       },
     }

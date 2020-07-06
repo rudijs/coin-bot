@@ -45,7 +45,7 @@ function appendTokens(tokens: any, data: any) {
 }
 
 export const getTokenPriceHistoryGrouped = async (axios: any, address: string, apiKey: string) => {
-  const url = `https://api.ethplorer.io/getTokenPriceHistoryGrouped/${address}?apiKey=${apiKey}&period=22`
+  const url = `https://api.ethplorer.io/getTokenPriceHistoryGrouped/${address}?apiKey=${apiKey}&period=91`
   const res = await axios.get(url)
   // console.log(res.data.history.prices.length)
   const prices = res.data.history.prices

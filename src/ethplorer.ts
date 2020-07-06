@@ -36,7 +36,8 @@ function appendTokens(tokens: any, data: any) {
         coinMarketCap: `https://coinmarketcap.com/currencies/${item.name.toLowerCase()}/markets`,
         bitscreener: `https://bitscreener.com/coins/${item.name.toLowerCase()}/chart`,
         uniSwap: `https://app.uniswap.org/#/swap?inputCurrency=${item.address}`,
-        oneInch: `https://1inch.exchange/#/ETH/${item.symbol}`,
+        oneInchBuy: `https://1inch.exchange/#/ETH/${item.symbol}`,
+        oneInchSell: `https://1inch.exchange/#/${item.symbol}/ETH`,
       }
     }
   }
@@ -176,7 +177,10 @@ export const formatReport = (data: any) => {
     <tr><td colspan="3"><a href="${item.bitscreener}" target="_blank">${item.bitscreener}</a></td></tr>
     <tr><td colspan="3"><a href="${item.coinGecko}" target="_blank">${item.coinGecko}</a></td></tr>
     <tr><td colspan="3"><a href="${item.coinMarketCap}" target="_blank">${item.coinMarketCap}</a></td></tr>
-    <tr><td colspan="3"><a href="${item.oneInch}" target="_blank">${item.oneInch}</a></td></tr>
+    <tr><td colspan="3">
+    <a href="${item.oneInchBuy}" target="_blank">1Inch - Buy</a>&nbsp;|&nbsp
+    <a href="${item.oneInchSell}" target="_blank">1inch - Sell</a>
+    </td></tr>
     <tr><td colspan="3"><a href="${item.uniSwap}" target="_blank">${item.uniSwap}</a></td></tr>
     </table>\n`
     }

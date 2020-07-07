@@ -4,6 +4,7 @@ dayjs.extend(utc)
 import { EMA } from "technicalindicators"
 
 export const coinsMarkets = async (axios: any) => {
+  console.log("==> Fetching coingecko.com markets ...")
   const markets = await axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=200&page=1&sparkline=false")
   // console.log(101, markets)
 
@@ -21,6 +22,7 @@ export const coinPriceHistory = async (axios: any, coinIdList: string[]) => {
   const report: any = {}
 
   for (const item of coinIdList) {
+    console.log(`==> Fetching coingecko.com market data: ${item}`)
     // Minutely data will be used for duration within 1 day, Hourly data will be used for duration between 1 day and 90 days,
     // Daily data will be used for duration above 90 days.
     const url = `https://api.coingecko.com/api/v3/coins/${item}/market_chart?vs_currency=usd&days=91`

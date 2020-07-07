@@ -4,6 +4,7 @@ export const getTokens = async (axios: any, apiKey: string) => {
   let tokens: any = {}
 
   // top 50 tokens by capitalization
+  console.log("==> Fetching Top 50 tokens by capitalization...")
   let url = `https://api.ethplorer.io/getTop?apiKey=${apiKey}&criteria=cap`
   // console.log(url)
   const cap = await axios.get(url)
@@ -12,13 +13,16 @@ export const getTokens = async (axios: any, apiKey: string) => {
   tokens = appendTokens(tokens, cap.data.tokens)
 
   // top 50 tokens by Trade Volume
+  console.log("==> Fetching Top 50 tokens by volume...")
   url = `https://api.ethplorer.io/getTop?apiKey=${apiKey}&criteria=trade`
   const trade = await axios.get(url)
   tokens = appendTokens(tokens, trade.data.tokens)
 
   // top 50 tokens by Operations
+  console.log("==> Fetching Top 50 tokens by operations...")
   url = `https://api.ethplorer.io/getTop?apiKey=${apiKey}&criteria=count`
   const count = await axios.get(url)
+
   tokens = appendTokens(tokens, count.data.tokens)
 
   return tokens
@@ -32,12 +36,13 @@ function appendTokens(tokens: any, data: any) {
         name: item.name,
         address: item.address,
         symbol: item.symbol,
-        coinGecko: `https://www.coingecko.com/en/coins/${item.name.toLowerCase()}#markets`,
-        coinMarketCap: `https://coinmarketcap.com/currencies/${item.name.toLowerCase()}/markets`,
-        bitscreener: `https://bitscreener.com/coins/${item.name.toLowerCase()}/chart`,
+        coinGecko: `https://www.coingecko.com/en/coins/${item.name.toLowerCase().replace(/\ /g, "-")}#markets`,
+        coinMarketCap: `https://coinmarketcap.com/currencies/${item.name.toLowerCase().replace(/\ /g, "-")}/markets`,
+        bitscreener: `https://bitscreener.com/coins/${item.name.toLowerCase().replace(/\ /g, "-")}/chart`,
         uniSwap: `https://app.uniswap.org/#/swap?inputCurrency=${item.address}`,
         oneInchBuy: `https://1inch.exchange/#/ETH/${item.symbol}`,
         oneInchSell: `https://1inch.exchange/#/${item.symbol}/ETH`,
+        oneInchSellUsd: `https://1inch.exchange/#/${item.symbol}/USDC`,
       }
     }
   }
@@ -45,6 +50,7 @@ function appendTokens(tokens: any, data: any) {
 }
 
 export const getTokenPriceHistoryGrouped = async (axios: any, address: string, apiKey: string) => {
+  // console.log(`Fetching ethplorer.io address: ${address} ...`)
   const url = `https://api.ethplorer.io/getTokenPriceHistoryGrouped/${address}?apiKey=${apiKey}&period=91`
   const res = await axios.get(url)
   // console.log(res.data.history.prices.length)
@@ -109,6 +115,7 @@ export const tokenReport = async (axios: any, tokenList: any, apiKey: string) =>
   const addresses = Object.keys(tokenList)
   for (const address of addresses) {
     // console.log(address)
+    console.log(`==> Fetching ethplorer.io price history: ${tokenList[address].name}`)
     try {
       const priceHistory = await getTokenPriceHistoryGrouped(axios, address, apiKey)
       tokenList[address].priceHistory = priceHistory
@@ -179,7 +186,8 @@ export const formatReport = (data: any) => {
     <tr><td colspan="3"><a href="${item.coinMarketCap}" target="_blank">${item.coinMarketCap}</a></td></tr>
     <tr><td colspan="3">
     <a href="${item.oneInchBuy}" target="_blank">1Inch - Buy</a>&nbsp;|&nbsp
-    <a href="${item.oneInchSell}" target="_blank">1inch - Sell</a>
+    <a href="${item.oneInchSell}" target="_blank">1inch - Sell ETH</a>&nbsp;|&nbsp
+    <a href="${item.oneInchSellUsd}" target="_blank">1inch - Sell USD</a>
     </td></tr>
     <tr><td colspan="3"><a href="${item.uniSwap}" target="_blank">${item.uniSwap}</a></td></tr>
     </table>\n`

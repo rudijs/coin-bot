@@ -1,5 +1,5 @@
 import { ftxApi, ftxParams } from "./ftxApi"
-import { EMA } from "technicalindicators"
+import { EMA, HeikinAshi } from "technicalindicators"
 
 export const getMarkets = async (axios: any, apiKey: string, apiSecret: string) => {
   const method = "GET"
@@ -36,12 +36,33 @@ export const getMarketHistoricalCloses = async (axios: any, apiKey: string, apiS
     path,
   }
   const res = await ftxApi(params)
+  // console.log(res)
   res.result.pop() // remove today's OHLC, we decide on the close of yesterday's price action
   // console.log(res.result)
 
-  const values = res.result.map((item: any) => item.close)
-  // console.log(values)
-  return values
+  // create Heiken Aishi OHLC
+  const data = {
+    open: Array(),
+    high: Array(),
+    low: Array(),
+    close: Array(),
+  }
+
+  for (const ohlc of res.result) {
+    data.open.push(ohlc.open)
+    data.high.push(ohlc.high)
+    data.low.push(ohlc.low)
+    data.close.push(ohlc.close)
+  }
+
+  const heikinAshi = HeikinAshi.calculate(data)
+  // console.log(heikinAshi)
+
+  // value for regular candlesticks
+  // const values = res.result.map((item: any) => item.close) // console.log(values)
+  // return values
+
+  return heikinAshi.close!
 }
 
 export const marketPosture = (market: string, closeValues: number[]) => {

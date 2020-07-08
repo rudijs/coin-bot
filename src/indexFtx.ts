@@ -12,7 +12,7 @@ const main = async () => {
   console.log("==> Fetching ftx.com markets...")
   const markets = await getMarkets(axios, apiKey, apiSecret)
   // console.log(markets)
-  // const markets = ["BTC-PERP", "ETH-PERP"]
+  // const markets = ["BTC-PERP"]
 
   const report: any = { SELL: [], BUY: [], HOLD: [], NOT_HOLD: [] }
 

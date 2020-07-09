@@ -113,11 +113,22 @@ export const formatReport = (data: any) => {
     SELL: "#f3d8d7",
     BUY: "#a5eabf",
     HOLD: "#a5d7f4",
-    NOT_HOLD: "#925b4d",
+    NOT_HOLD: "#eae4e0",
     UNKNOWN: "#c5c5c5",
   }
 
-  let body = `<html><head><style>
+  let body = `<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>FTX Report</title>
+  <style>
       table {
         width: 600px;
         border-collapse: collapse;
@@ -138,7 +149,7 @@ export const formatReport = (data: any) => {
       }
 </style>
 </head>
-<body><div class="box">\n`
+<body><div class="box"><h1>Ftx.com Report</h1>\n`
 
   // console.log(data)
   for (const posture of Object.keys(data)) {

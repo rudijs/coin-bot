@@ -43,6 +43,7 @@ function appendTokens(tokens: any, data: any) {
         oneInchBuy: `https://1inch.exchange/#/ETH/${item.symbol}`,
         oneInchSell: `https://1inch.exchange/#/${item.symbol}/ETH`,
         oneInchSellUsd: `https://1inch.exchange/#/${item.symbol}/USDC`,
+        etherscan: `https://etherscan.io/token/${item.address}`,
       }
     }
   }
@@ -150,11 +151,22 @@ export const formatReport = (data: any) => {
     SELL: "#f3d8d7",
     BUY: "#a5eabf",
     HOLD: "#a5d7f4",
-    NOT_HOLD: "#925b4d",
+    NOT_HOLD: "#eae4e0",
     UNKNOWN: "#c5c5c5",
   }
 
-  let body = `<html><head><style>
+  let body = `<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Ethplorer Report</title>
+    <style>
       table {
         border-collapse: collapse;
         margin-bottom: 50px;
@@ -174,7 +186,7 @@ export const formatReport = (data: any) => {
       }
 </style>
 </head>
-<body><div class="box">\n`
+<body><div class="box"><h1>Ethplorer.io Report</h1>\n`
 
   // console.log(data)
   for (const posture of Object.keys(data)) {
@@ -190,6 +202,7 @@ export const formatReport = (data: any) => {
     <a href="${item.oneInchSellUsd}" target="_blank">1inch - Sell USD</a>
     </td></tr>
     <tr><td colspan="3"><a href="${item.uniSwap}" target="_blank">${item.uniSwap}</a></td></tr>
+    <tr><td colspan="3"><a href="${item.etherscan}" target="_blank">${item.etherscan}</a></td></tr>
     </table>\n`
     }
   }

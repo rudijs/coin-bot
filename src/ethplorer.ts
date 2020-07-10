@@ -196,12 +196,13 @@ export const formatReport = (data: any) => {
     <tr><td colspan="3"><a href="${item.bitscreener}" target="_blank">${item.bitscreener}</a></td></tr>
     <tr><td colspan="3"><a href="${item.coinGecko}" target="_blank">${item.coinGecko}</a></td></tr>
     <tr><td colspan="3"><a href="${item.coinMarketCap}" target="_blank">${item.coinMarketCap}</a></td></tr>
+    <tr><td colspan="3"><a href="${item.etherscan}" target="_blank">${item.etherscan}</a></td></tr>
     <tr><td colspan="3"><a href="${item.uniSwap}" target="_blank">${item.uniSwap}</a></td></tr>
     <tr><td colspan="3">
     <a href="${item.oneInchBuy}" target="_blank">1Inch - Buy</a>&nbsp;|&nbsp
     <a href="${item.oneInchSell}" target="_blank">1inch - Sell ETH</a>&nbsp;|&nbsp
+    <a href="${item.oneInchSellUsd}" target="_blank">1inch - Sell USD</a>
     </td></tr>
-    <tr><td colspan="3"><a href="${item.etherscan}" target="_blank">${item.etherscan}</a></td></tr>
     </table>\n`
     }
   }

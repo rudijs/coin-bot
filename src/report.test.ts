@@ -13,7 +13,7 @@ describe("#report", () => {
   })
 
   test("#formatReport", () => {
-    const res = formatReport(dataSorted)
+    const res = formatReport(dataSorted, new Date(), 10)
     // console.log(res)
   })
 })

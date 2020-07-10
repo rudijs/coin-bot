@@ -4,6 +4,9 @@ import * as axios from "axios"
 import * as fs from "fs"
 
 const main = async () => {
+  const date = new Date()
+  const start = date.getTime()
+
   const markets = await coinsMarkets(axios)
   // console.log("markets", markets)
 
@@ -12,7 +15,10 @@ const main = async () => {
 
   const sortedSignals = sort(signals)
 
-  const htmlReport = formatReport(sortedSignals)
+  const end = new Date().getTime()
+  const durationSeconds = (end - start) / 1000
+
+  const htmlReport = formatReport(sortedSignals, date, durationSeconds)
   // console.log(htmlReport)
   console.log("==> Writing coingecko.com report...")
   fs.writeFileSync("./tmp/coingeckoReport.html", htmlReport, "utf8")

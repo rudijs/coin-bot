@@ -8,11 +8,14 @@ const main = async () => {
   const apiKey = process.env.FTX_API_KEY
   const apiSecret = process.env.FTX_SECRET
 
+  const date = new Date()
+  const start = date.getTime()
+
   // get Markets
   console.log("==> Fetching ftx.com markets...")
   const markets = await getMarkets(axios, apiKey, apiSecret)
   // console.log(markets)
-  // const markets = ["BTC-PERP", "ETH-PERP"]
+  // const markets = ["BTC-PERP"]
 
   const report: any = { SELL: [], BUY: [], HOLD: [], NOT_HOLD: [] }
 
@@ -26,10 +29,13 @@ const main = async () => {
     report[thisMarketPosture.posture].push(thisMarketPosture)
   }
 
+  const end = new Date().getTime()
+  const durationSeconds = (end - start) / 1000
+
   // console.log(report)
   // console.log(formatReport(report))
   console.log("==> Writing ftx.com report...")
-  fs.writeFileSync("./tmp/ftxReport.html", formatReport(report), "utf8")
+  fs.writeFileSync("./tmp/ftxReport.html", formatReport(report, date, durationSeconds), "utf8")
   console.log("==> ftx.com report done.")
 
   return ""

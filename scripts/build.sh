@@ -1,12 +1,12 @@
 #!/bin/bash
 
 echo "==> Building ftx report..."
-node ../dist/index3.js > ../tmp/ftxReport.html
+node ../dist/indexFtx.js
 
 echo "==> Building ethplorer report..."
-node ../dist/index2.js > ../tmp/ethplorerReport.html
+node ../dist/indexEthplorer.js
 
 echo "==> Building coingecko report..."
-node ../dist/index.js > ../tmp/coinGeckoReport.html
+node ../dist/indexCoingecko.js
 
 echo "==> Done."

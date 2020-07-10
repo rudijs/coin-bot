@@ -45,7 +45,7 @@ describe("#ethplorer", () => {
   })
 
   test("#formatReport", () => {
-    const reportFormated = formatReport(ethplorerReportSorted)
+    const reportFormated = formatReport(ethplorerReportSorted, new Date(), 10)
     // console.log(reportFormated)
   })
 })

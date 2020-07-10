@@ -108,7 +108,7 @@ export const marketPosture = (market: string, closeValues: number[]) => {
   }
 }
 
-export const formatReport = (data: any) => {
+export const formatReport = (data: any, date: Date, durationSeconds: number) => {
   const colors: any = {
     SELL: "#f3d8d7",
     BUY: "#a5eabf",
@@ -149,7 +149,11 @@ export const formatReport = (data: any) => {
       }
 </style>
 </head>
-<body><div class="box"><h1>Ftx.com Report</h1>\n`
+<body><div class="box">
+<h1>Ftx.com Report</h1>
+<p>Date: ${date.toLocaleString("en-US", { timeZone: "Asia/Manila" })}</p>
+<p>Duration Seconds: ${durationSeconds}s</p>
+\n`
 
   // console.log(data)
   for (const posture of Object.keys(data)) {

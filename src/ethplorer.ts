@@ -4,7 +4,7 @@ export const getTokens = async (axios: any, apiKey: string) => {
   let tokens: any = {}
 
   // top 50 tokens by capitalization
-  console.log("==> Fetching Top 50 tokens by capitalization...")
+  if (process.env.NODE_ENV !== "test") console.log("==> Fetching Top 50 tokens by capitalization...")
   let url = `https://api.ethplorer.io/getTop?apiKey=${apiKey}&criteria=cap`
   // console.log(url)
   const cap = await axios.get(url)
@@ -13,13 +13,13 @@ export const getTokens = async (axios: any, apiKey: string) => {
   tokens = appendTokens(tokens, cap.data.tokens)
 
   // top 50 tokens by Trade Volume
-  console.log("==> Fetching Top 50 tokens by volume...")
+  if (process.env.NODE_ENV !== "test") console.log("==> Fetching Top 50 tokens by volume...")
   url = `https://api.ethplorer.io/getTop?apiKey=${apiKey}&criteria=trade`
   const trade = await axios.get(url)
   tokens = appendTokens(tokens, trade.data.tokens)
 
   // top 50 tokens by Operations
-  console.log("==> Fetching Top 50 tokens by operations...")
+  if (process.env.NODE_ENV !== "test") console.log("==> Fetching Top 50 tokens by operations...")
   url = `https://api.ethplorer.io/getTop?apiKey=${apiKey}&criteria=count`
   const count = await axios.get(url)
 
@@ -116,7 +116,7 @@ export const tokenReport = async (axios: any, tokenList: any, apiKey: string) =>
   const addresses = Object.keys(tokenList)
   for (const address of addresses) {
     // console.log(address)
-    console.log(`==> Fetching ethplorer.io price history: ${tokenList[address].name}`)
+    if (process.env.NODE_ENV !== "test") console.log(`==> Fetching ethplorer.io price history: ${tokenList[address].name}`)
     try {
       const priceHistory = await getTokenPriceHistoryGrouped(axios, address, apiKey)
       tokenList[address].priceHistory = priceHistory

@@ -1,12 +1,17 @@
 #!/bin/bash
 
+BASE_PATH=$(dirname $(readlink -f $0))
+
 echo "==> Building ftx report..."
-node ../dist/indexFtx.js
+node $BASE_PATH/../dist/indexFtx.js
+
+echo "==> Building binance reports..."
+node $BASE_PATH/../dist/indexBinance.js
 
 echo "==> Building ethplorer report..."
-node ../dist/indexEthplorer.js
+node $BASE_PATH/../dist/indexEthplorer.js
 
 echo "==> Building coingecko report..."
-node ../dist/indexCoingecko.js
+node $BASE_PATH/../dist/indexCoingecko.js
 
 echo "==> Done."

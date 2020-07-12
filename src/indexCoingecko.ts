@@ -2,10 +2,15 @@ import { coinsMarkets, coinPriceHistory } from "./coinGecko"
 import { sort, formatReport } from "./report"
 import * as axios from "axios"
 import * as fs from "fs"
+import * as path from "path"
 
 const main = async () => {
   const date = new Date()
   const start = date.getTime()
+
+  const reportsDir = path.resolve(__dirname, "../reports")
+  const reportFile = "coingecko.html"
+  const reportPath = path.join(reportsDir, reportFile)
 
   const markets = await coinsMarkets(axios)
   // console.log("markets", markets)
@@ -21,7 +26,7 @@ const main = async () => {
   const htmlReport = formatReport(sortedSignals, date, durationSeconds)
   // console.log(htmlReport)
   console.log("==> Writing coingecko.com report...")
-  fs.writeFileSync("./tmp/coingeckoReport.html", htmlReport, "utf8")
+  fs.writeFileSync(reportPath, htmlReport, "utf8")
   console.log("==> coingecko.com report done.")
 
   return ""

@@ -1,6 +1,7 @@
 import { getMarkets, getMarketHistoricalCloses, marketPosture, formatReport } from "./ftx"
 import axios from "axios"
 import * as fs from "fs"
+import * as path from "path"
 
 const main = async () => {
   if (!process.env.FTX_API_KEY || !process.env.FTX_SECRET) throw new Error("Missing required FTX env vars")
@@ -10,6 +11,10 @@ const main = async () => {
 
   const date = new Date()
   const start = date.getTime()
+
+  const reportsDir = path.resolve(__dirname, "../reports")
+  const reportFile = "ftx.html"
+  const reportPath = path.join(reportsDir, reportFile)
 
   // get Markets
   console.log("==> Fetching ftx.com markets...")
@@ -21,7 +26,7 @@ const main = async () => {
 
   for (const market of markets) {
     // console.log(market)
-    console.log(`Fetching ${market} historical data...`)
+    console.log(`Fetching ftx.com ${market} historical data...`)
     const marketHistoricalCloseValues = await getMarketHistoricalCloses(axios, apiKey, apiSecret, market)
     // console.log(res)
     const thisMarketPosture = marketPosture(market, marketHistoricalCloseValues)
@@ -35,7 +40,7 @@ const main = async () => {
   // console.log(report)
   // console.log(formatReport(report))
   console.log("==> Writing ftx.com report...")
-  fs.writeFileSync("./tmp/ftxReport.html", formatReport(report, date, durationSeconds), "utf8")
+  fs.writeFileSync(reportPath, formatReport(report, date, durationSeconds), "utf8")
   console.log("==> ftx.com report done.")
 
   return ""

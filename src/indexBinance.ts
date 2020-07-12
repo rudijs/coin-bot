@@ -1,6 +1,7 @@
 import { exchangeInfo, marketPriceHistory, marketPosture, formatReport } from "./binance"
 import * as axios from "axios"
 import * as fs from "fs"
+import * as path from "path"
 
 const main = async () => {
   const markets = await exchangeInfo(axios)
@@ -10,6 +11,10 @@ const main = async () => {
 
   let date = new Date()
   let start = date.getTime()
+
+  const reportsDir = path.resolve(__dirname, "../reports")
+  let reportFile = "binance-btc.html"
+  let reportPath = path.join(reportsDir, reportFile)
 
   let signals: any = { SELL: [], BUY: [], HOLD: [], NOT_HOLD: [] }
 
@@ -30,7 +35,7 @@ const main = async () => {
   let htmlReport = formatReport(signals, date, durationSeconds, "BTC") // console.log(htmlReport)
 
   console.log("==> Writing binance.com BTC report...")
-  fs.writeFileSync("./tmp/binanceBtcReport.html", htmlReport, "utf8")
+  fs.writeFileSync(reportPath, htmlReport, "utf8")
   console.log("==> binance.com BTC report done.")
 
   // ETH Markets
@@ -38,6 +43,9 @@ const main = async () => {
 
   date = new Date()
   start = date.getTime()
+
+  reportFile = "binance-eth.html"
+  reportPath = path.join(reportsDir, reportFile)
 
   signals = { SELL: [], BUY: [], HOLD: [], NOT_HOLD: [] }
 
@@ -58,7 +66,7 @@ const main = async () => {
   htmlReport = formatReport(signals, date, durationSeconds, "ETH") // console.log(htmlReport)
 
   console.log("==> Writing binance.com ETH report...")
-  fs.writeFileSync("./tmp/binanceEthReport.html", htmlReport, "utf8")
+  fs.writeFileSync(reportPath, htmlReport, "utf8")
   console.log("==> binance.com ETH report done.")
 
   // USDT Markets
@@ -66,6 +74,9 @@ const main = async () => {
 
   date = new Date()
   start = date.getTime()
+
+  reportFile = "binance-usdt.html"
+  reportPath = path.join(reportsDir, reportFile)
 
   signals = { SELL: [], BUY: [], HOLD: [], NOT_HOLD: [] }
 
@@ -86,7 +97,7 @@ const main = async () => {
   htmlReport = formatReport(signals, date, durationSeconds, "USDT") // console.log(htmlReport)
 
   console.log("==> Writing binance.com USDT report...")
-  fs.writeFileSync("./tmp/binanceUsdtReport.html", htmlReport, "utf8")
+  fs.writeFileSync(reportPath, htmlReport, "utf8")
   console.log("==> binance.com USDT report done.")
 
   return ""

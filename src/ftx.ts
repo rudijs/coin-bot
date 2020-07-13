@@ -1,5 +1,6 @@
 import { ftxApi, ftxParams } from "./ftxApi"
 import { EMA, HeikinAshi } from "technicalindicators"
+import { createSecureContext } from "tls"
 
 export const getMarkets = async (axios: any, apiKey: string, apiSecret: string) => {
   const method = "GET"
@@ -79,22 +80,46 @@ export const marketPosture = (market: string, closeValues: number[]) => {
 
   let posture = "NOT_HOLD"
 
-  // if we are above the Daily 21 EMA look for entry/exit
-  if (currentPrice > currentEma21) {
-    // are we above the Daily 8 EMA and the Daily 8 EMA is above the Daily 21 EMA
-    if (currentPrice > currentEma8 && currentEma8 > currentEma21) {
-      // if we just moved above the Daily 8 EMA it's a Buy
-      if (previousPrice < previousEma8) posture = "BUY"
-      // if we are still above the Daily 8 EMA it's a Hold
-      if (previousPrice > previousEma8) posture = "HOLD"
-    }
+  // // if we are above the Daily 21 EMA look for entry/exit
+  // if (currentPrice > currentEma21) {
+  //   // are we above the Daily 8 EMA and the Daily 8 EMA is above the Daily 21 EMA
+  //   if (currentPrice > currentEma8 && currentEma8 > currentEma21) {
+  //     // if we just moved above the Daily 8 EMA it's a Buy
+  //     if (previousPrice < previousEma8) posture = "BUY"
+  //     // if we are still above the Daily 8 EMA it's a Hold
+  //     if (previousPrice > previousEma8) posture = "HOLD"
+  //   }
 
-    // are we are below the Daily 8 EMA
-    if (currentPrice < currentEma8) {
-      // if we just moved below the Daily 8 EMA it's a Sell
-      if (previousPrice > previousEma8) posture = "SELL"
-      // if we are still below the Daily 8 EMA we should (already) not be holding
-      if (previousPrice < previousEma8) posture = "NOT_HOLD"
+  //   // are we are below the Daily 8 EMA
+  //   if (currentPrice < currentEma8) {
+  //     // if we just moved below the Daily 8 EMA it's a Sell
+  //     if (previousPrice > previousEma8) posture = "SELL"
+  //     // if we are still below the Daily 8 EMA we should (already) not be holding
+  //     if (previousPrice < previousEma8) posture = "NOT_HOLD"
+  //   }
+  // }
+
+  // if we are above the 8EMA
+  if (currentPrice > currentEma8) {
+    // is a new BUY signal
+    if (previousPrice < previousEma8) {
+      posture = "BUY"
+    }
+    // else it's a current HOLD
+    else {
+      posture = "HOLD"
+    }
+  }
+
+  // if we are below the 8EMA
+  if (currentPrice < currentEma8) {
+    // is this a new SELL signal
+    if (previousPrice > previousEma8) {
+      posture = "SELL"
+    }
+    // else it's a current NOT_HOLD
+    else {
+      posture = "NOT_HOLD"
     }
   }
 

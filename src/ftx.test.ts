@@ -18,7 +18,8 @@ describe("ftx", () => {
   })
 
   test.skip("#getMarketHistoricalPrices", async () => {
-    const res = await getMarketHistoricalCloses(axios, apiKey, apiSecret, "BTC-PERP")
+    const resolution = 86400 // daily
+    const res = await getMarketHistoricalCloses(axios, apiKey, apiSecret, "BTC-PERP", resolution)
     // console.log(101, res)
   })
 

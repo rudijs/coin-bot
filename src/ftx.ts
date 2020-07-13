@@ -23,10 +23,10 @@ export const getMarkets = async (axios: any, apiKey: string, apiSecret: string) 
   return perpMarkets
 }
 
-export const getMarketHistoricalCloses = async (axios: any, apiKey: string, apiSecret: string, market: string) => {
+export const getMarketHistoricalCloses = async (axios: any, apiKey: string, apiSecret: string, market: string, resolution: number) => {
   const method = "GET"
   // const market = "BTC-PERP"
-  const resolution = 86400 // daily
+  // const resolution = 86400 // daily
   const limit = 100
   const path = `/api/markets/${market}/candles?resolution=${resolution}&limit=${limit}`
   const params: ftxParams = {
@@ -123,6 +123,15 @@ export const marketPosture = (market: string, closeValues: number[]) => {
     }
   }
 
+  // console.log({
+  //   market,
+  //   currentPrice,
+  //   previousPrice,
+  //   currentEma21,
+  //   currentEma8,
+  //   posture,
+  // })
+
   return {
     market,
     currentPrice,
@@ -133,7 +142,7 @@ export const marketPosture = (market: string, closeValues: number[]) => {
   }
 }
 
-export const formatReport = (data: any, date: Date, durationSeconds: number) => {
+export const formatReport = (data: any, date: Date, durationSeconds: number, period: string) => {
   const colors: any = {
     SELL: "#f3d8d7",
     BUY: "#a5eabf",
@@ -175,7 +184,7 @@ export const formatReport = (data: any, date: Date, durationSeconds: number) => 
 </style>
 </head>
 <body><div class="box">
-<h1>Ftx.com Report</h1>
+<h1>Ftx.com Report: ${period}</h1>
 <p>Date: ${date.toLocaleString("en-US", { timeZone: "Asia/Manila" })}</p>
 <p>Duration Seconds: ${durationSeconds}s</p>
 \n`
